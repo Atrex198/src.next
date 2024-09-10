@@ -138,7 +138,7 @@ jobs:
           ls -la $HOME/kiwibrowser-next-builds-${{ matrix.platform }}
 
       - name: Uploading APK
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: apk-${{ matrix.platform }}
           path: /home/runner/kiwibrowser-next-builds-${{ matrix.platform }}/
