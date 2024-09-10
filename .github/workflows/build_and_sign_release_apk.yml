@@ -59,7 +59,7 @@ jobs:
         run: sudo rm -rf /usr/share/dotnet
 
       - name: Checking-out source-code in $GITHUB_WORKSPACE
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Creating secondary disk folder on /dev/disk/azure/resource-part1 (SSD)
         run: |

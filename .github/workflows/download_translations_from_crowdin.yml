@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v4.3.4
       
       - name: Downloading translations
         run: php toolbox/download_translations_from_crowdin.php ${{ secrets.CROWDIN_APIKEY }}
