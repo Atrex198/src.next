@@ -39,8 +39,8 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Start SSH agent
-          uses: webfactory/ssh-agent@v0.5.4
-          with:
+        uses: webfactory/ssh-agent@v0.5.4
+        with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: Initializing build
         run: echo Initializing build for platform ${{ matrix.platform }}
